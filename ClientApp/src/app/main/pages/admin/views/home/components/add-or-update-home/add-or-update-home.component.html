@@ -1,0 +1,95 @@
+<div class="content-wrapper container-xxl p-0">
+  <div class="content-body">
+    <!-- / Basic multiple Column Form section start -->
+    <section id="multiple-column-form">
+      <div class="row match-height">
+        <div class="col-12">
+          <core-card-snippet>
+            <h4 class="card-title">Home</h4>
+            <div class="card-body">
+              <form
+                class="form"
+                [formGroup]="ReactiveForm"
+                (ngSubmit)="ReactiveFormOnSubmit()"
+              >
+                <div class="row">
+                  <div class="col-md-12 col-12">
+                    <div class="form-group">
+                      <label for="first-name-column">Home Name</label>
+                      <input
+                        type="text"
+                        id="first-name-column"
+                        class="form-control"
+                        placeholder="Home Name"
+                        formControlName="name"
+                        [readonly]="isReadonly"
+                        [ngClass]="{
+                          'is-invalid':
+                            ReactiveSubmitted && _ReactiveForm.name.errors
+                        }"
+                      />
+                      <div
+                        *ngIf="ReactiveSubmitted && _ReactiveForm.name.errors"
+                        class="invalid-feedback"
+                      >
+                        <div *ngIf="_ReactiveForm.name.errors.required">
+                          name is required
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-12">
+                    <div class="form-group">
+                      <label for="first-name-column"> Address</label>
+                      <textarea
+                        placeholder="Address"
+                        class="form-control"
+                        formControlName="address"
+                        aria-label="With textarea"
+                        [readonly]="isReadonly"
+                        [ngClass]="{
+                          'is-invalid':
+                            ReactiveSubmitted && _ReactiveForm.address.errors
+                        }"
+                      ></textarea>
+                      <div
+                        *ngIf="
+                          ReactiveSubmitted && _ReactiveForm.address.errors
+                        "
+                        class="invalid-feedback"
+                      >
+                        <div *ngIf="_ReactiveForm.address.errors.required">
+                          address is required
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      rippleEffect
+                      [disabled]="isReadonly"
+                      class="btn btn-primary mr-1"
+                    >
+                      Submit
+                    </button>
+                    <button
+                      rippleEffect
+                      (click)="back()"
+                      class="btn btn-outline-secondary"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </core-card-snippet>
+        </div>
+      </div>
+    </section>
+    <!-- Basic multiple Column Form section end -->
+  </div>
+</div>

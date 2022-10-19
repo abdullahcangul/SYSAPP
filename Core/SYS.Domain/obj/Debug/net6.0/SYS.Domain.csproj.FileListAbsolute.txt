@@ -1,0 +1,12 @@
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/bin/Debug/net6.0/SYS.Domain.deps.json
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/bin/Debug/net6.0/SYS.Domain.dll
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/bin/Debug/net6.0/ref/SYS.Domain.dll
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/bin/Debug/net6.0/SYS.Domain.pdb
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/SYS.Domain.csproj.AssemblyReference.cache
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/SYS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/SYS.Domain.AssemblyInfoInputs.cache
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/SYS.Domain.AssemblyInfo.cs
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/SYS.Domain.csproj.CoreCompileInputs.cache
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/SYS.Domain.dll
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/ref/SYS.Domain.dll
+/Users/abdullahcangul/RiderProjects/SYSAPP/Core/SYS.Domain/obj/Debug/net6.0/SYS.Domain.pdb

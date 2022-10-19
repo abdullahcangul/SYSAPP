@@ -1,0 +1,51 @@
+
+<div class="content-wrapper container-xxl p-0">
+    <div class="content-body" *ngIf="rows&&columns">
+        <div *ngIf="ViewMode==ViewType.LIST||ViewMode==ViewType.DELETE">
+            <ca-base-datatable
+            [columns]="columns"
+            [rows]="rows"
+            (dropDownButtonEmiter)="dropDownButtonClicked($event)"
+            >
+    
+            </ca-base-datatable>   
+        </div>
+        <div *ngIf="ViewMode==ViewType.DETAIL||ViewMode==ViewType.ADD||ViewMode==ViewType.UPDATE">
+           <app-add-or-update-home
+            [viewMode]="ViewMode"
+            [row]="row"
+            (backOnClick)="back()"
+           >
+            
+           </app-add-or-update-home>
+        </div>   
+      </div>
+  </div>
+
+  
+  <ng-template #statusTemplate let-row="row" let-value="value" ngx-datatable-cell-template>
+    <div
+      class="badge badge-pill"
+      [ngClass]="{
+        'badge-light-primary': row.status == '1',
+        'badge-light-success': row.status == '2',
+        'badge-light-danger': row.status == '3',
+        'badge-light-warning': row.status == '4',
+        'badge-light-info': row.status == '5'
+      }"
+    >
+      {{
+        row.status == 1
+          ? 'Current'
+          : row.status == 2
+          ? 'Professional'
+          : row.status == 3
+          ? 'Rejected'
+          : row.status == 4
+          ? 'Resigned'
+          : row.status == 5
+          ? 'Applied'
+          : 'Applied'
+      }}
+    </div>
+  </ng-template>
